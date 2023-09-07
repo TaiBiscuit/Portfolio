@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/5kTtfn5/Weather-App.png",
+        "link": "https://github.com/TaiBiscuit/The-Weather-App",
+        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
+        "key": 50
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/M858dQs/Ecommerce.png",
+        "link": "https://github.com/TaiBiscuit/E-Commerce/tree/main",
+        "tech1": "https://i.ibb.co/p0XsJ8r/reactjs.png",
+        "key": 51
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/kBhrVZC/Snake.png",
+        "link": "https://taibiscuit.github.io/Snake-Js-Game/",
+        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "key": 52
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/Z2PNJTg/piano.png",
+        "link": "https://taibiscuit.github.io/Piano-Js/",
+        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
+        "key": 53
+    }
+]

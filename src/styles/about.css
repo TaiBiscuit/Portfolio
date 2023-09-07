@@ -1,0 +1,73 @@
+
+
+.about-me-zone{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem 3rem 5rem;
+}
+
+.about-me-picture{
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.about-me-img{
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+.about-me-img:hover{
+    transform: scale(1.2);
+}
+
+.about-me-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-zone{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.1s;
+}
+
+.tech-icons-zone{
+    display: flex;
+    justify-content: center;
+}
+
+.tech-info{
+    margin-top: 4rem;
+    margin: 4rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-info-img{
+    width: 270px;
+    height: 300px;
+}
+
+.tech-img{
+    width: 100px;
+    height: 100px;
+}
+
+.tech-info-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.tech, .tech-txt{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    transition: all 0.3s;
+}
+
+.tech:hover{
+    transform: scale(2);
+}

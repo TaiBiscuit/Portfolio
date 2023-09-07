@@ -1,0 +1,51 @@
+[
+    {
+        "name": "JavaScript",
+        "info": "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.",
+        "image": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "id": 1,
+        "key": 100
+    },
+    {
+        "name": "ReactJs",
+        "info": "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.",
+        "image": "https://i.ibb.co/p0XsJ8r/reactjs.png",
+        "id": 2,
+        "key": 101
+    },
+    {
+        "name": "HTML",
+        "info": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
+        "image": "https://i.ibb.co/Chv9fky/html.png",
+        "id": 3,
+        "key": 102
+    },
+    {
+        "name": "CSS",
+        "info": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.",
+        "image": "https://i.ibb.co/Rv1yvNP/css.png",
+        "id": 4,
+        "key": 103
+    },
+    {
+        "name": "NodeJs",
+        "info": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.",
+        "image": "https://i.ibb.co/6gxqcNV/nodejs.png",
+        "id": 5,
+        "key": 104
+    },
+    {
+        "name": "MongoDB",
+        "info": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas",
+        "image": "https://i.ibb.co/hWNST0k/mongodb.png",
+        "id": 6,
+        "key": 105
+    },
+    {
+        "name": "Python",
+        "info": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "image": "https://i.ibb.co/68QccKn/python.png",
+        "id": 7,
+        "key": 106
+    }
+]

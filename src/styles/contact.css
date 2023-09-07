@@ -1,0 +1,33 @@
+.contact{
+    margin-bottom: 5rem;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-icon{
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.contact-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+
+.contact-txt{
+    transition: all 0.3s ease-out;
+}
+
+.contact-link:hover .contact-icon{
+    transform: translateY(-15px); 
+}
+
+.contact-link:hover .contact-txt{
+    color: springgreen; 
+}
