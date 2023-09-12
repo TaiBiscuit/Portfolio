@@ -1,0 +1,51 @@
+[
+    {
+        "name": "JavaScript",
+        "info": "JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y dinámico.",
+        "image": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "id": 1,
+        "key": 100
+    },
+    {
+        "name": "ReactJs",
+        "info": "React es una librería Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre. En el proyecto hay más de mil desarrolladores libres",
+        "image": "https://i.ibb.co/p0XsJ8r/reactjs.png",
+        "id": 2,
+        "key": 101
+    },
+    {
+        "name": "HTML",
+        "info": "HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web.",
+        "image": "https://i.ibb.co/Chv9fky/html.png",
+        "id": 3,
+        "key": 102
+    },
+    {
+        "name": "CSS",
+        "info": "CSS, en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.​",
+        "image": "https://i.ibb.co/Rv1yvNP/css.png",
+        "id": 4,
+        "key": 103
+    },
+    {
+        "name": "NodeJs",
+        "info": "Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.",
+        "image": "https://i.ibb.co/6gxqcNV/nodejs.png",
+        "id": 5,
+        "key": 104
+    },
+    {
+        "name": "MongoDB",
+        "info": "MongoDB es un sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales, MongoDB guarda estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.",
+        "image": "https://i.ibb.co/hWNST0k/mongodb.png",
+        "id": 6,
+        "key": 105
+    },
+    {
+        "name": "Python",
+        "info": "Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, por ejemplo: Instagram, Netflix, Spotify, Panda3D, entre otros.​",
+        "image": "https://i.ibb.co/68QccKn/python.png",
+        "id": 7,
+        "key": 106
+    }
+]

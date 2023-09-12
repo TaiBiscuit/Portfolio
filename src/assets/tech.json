@@ -36,7 +36,7 @@
     },
     {
         "name": "MongoDB",
-        "info": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas",
+        "info": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.",
         "image": "https://i.ibb.co/hWNST0k/mongodb.png",
         "id": 6,
         "key": 105

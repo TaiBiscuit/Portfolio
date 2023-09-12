@@ -3,6 +3,7 @@
     position: fixed;
     background-color: #333;
     overflow: hidden;
+    justify-content: space-between;
     width: 100vw; 
     z-index: 10;
     align-items: center;
@@ -24,6 +25,11 @@
     color: white;
 }
 
-#viewBtn{
+.view-btn{
     border-radius: 40px;
+}
+
+.btns{
+    display: flex;
+    margin-right: 2rem;
 }

@@ -2,11 +2,15 @@ import React, { useEffect, useState, useContext } from "react";
 import '../../styles/projects.css'
 import { Loader } from "../Loader/Loader";
 import { ViewModeContext } from "../../context/viewModeContext";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export const Projects = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const {lightMode} = useContext(ViewModeContext);
+    const {language} = useContext(LanguageContext);
+
+
     const getProjectData = () => {
         fetch('./src/assets/projects.json')
         .then(function(response) {
@@ -26,13 +30,24 @@ export const Projects = () => {
         <Loader />
       ) : (
         <>
+            {
+            language? 
+            <>
             <h1 className="header-h1" id="projects-header">My Projects!</h1>
+            <div className="about-project">
+                <p>See some of my projects! You can also see my Github link at the bottom of the page. Feel free to take a look at my repositories. Upon hover you will see the icons representing the used technology for each project. If you click on it, you will see the page on a new window.</p>
+            </div>
+            </>:
+            <>
+            <h1 className="header-h1" id="projects-header">¡Mis Proyectos!</h1>
+            <div className="about-project">
+                <p>¡Mira algunos de mis proyectos! También podes visitar mis repositorios de Github, cuyo link se encuentra en la sección de contactos. Al pasar el mouse por cada proyecto se desplegarán los iconos que corresponden a las tecnologías utilizadas. Al hacer click izquierdo se abrirá el proyecto (O su repositorio) en una ventana nueva.</p>
+            </div>
+            </>
+            }
             <div className="projects section" id="projects">
-                <div className="about-project">
-                    <p>See some of my deployed projects! You can also see my Github link at the bottom of the page. Feel free to take a look at my repositories. Upon hover you will see the icons representing the used technology for each project. If you click on it, you will see the page on a new window.</p>
-                </div>
                 <div className="container">
-                {
+                    {
                     lightMode ?
                     <>
                     {
@@ -40,6 +55,7 @@ export const Projects = () => {
                         return(
                         <div className={`project-A project-zone-${item.id}`}>
                             <a href={item.link} target="_blank"><img src={item.image} alt="Project" className="project-img"/></a>
+                            <p className="project-title">{item.title}</p>
                             <ul className="project-tech">
                                 <li className="project-tech-list">
                                     <img src={item.tech1} alt="" className="project-tech-icon"/>
@@ -61,21 +77,17 @@ export const Projects = () => {
                                 </>
                                 }
                             </ul>
-                            <span className="top"></span>
-                            <span className="right"></span>
-                            <span className="bottom"></span>
-                            <span className="left"></span>
                         </div>)
                         })
                     }
-                </>
-                :
-                <>
+                    </>:
+                    <>
                     {
                     data && data.length>0 && data.map((item) =>{
                         return(
                             <div className={`project-B project-zone-${item.id}`} key={item.key}>
-                                <a href={item.link} target="_blank"><img src={item.image} alt="Project" className="project-img"/></a>
+                                <a href={item.link} target="_blank"><img src={item.image} alt="Project" className="project-img"/>
+                                <p className="project-title">{item.title}</p>
                                 <ul className="project-tech">
                                     <li className="project-tech-list">
                                         <img src={item.tech1} alt="" className="project-tech-icon"/>
@@ -96,16 +108,13 @@ export const Projects = () => {
                                     <>
                                     </>
                                     }
-                                <span className="top"></span>
-                                <span className="right"></span>
-                                <span className="bottom"></span>
-                                <span className="left"></span>
                                 </ul>
+                                </a>
                             </div>)
                         })
                     }
-                </>
-                }
+                    </>
+                    }
                 </div>
             </div>
         </>

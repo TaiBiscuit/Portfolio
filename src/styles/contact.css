@@ -1,6 +1,4 @@
-.contact{
-    margin-bottom: 5rem;
-}
+
 
 .contact-icons{
     display: flex;
@@ -20,7 +18,7 @@
     transition: all 0.3s ease-out;
 }
 
-.contact-txt{
+.contact-txt-B, .contact-txt-A{
     transition: all 0.3s ease-out;
 }
 
@@ -28,6 +26,10 @@
     transform: translateY(-15px); 
 }
 
-.contact-link:hover .contact-txt{
-    color: springgreen; 
+.contact-link:hover .contact-txt-A{
+    color: #04b0ee ; 
+}
+
+.contact-link:hover .contact-txt-B{
+    color: #3e1291 ; 
 }
