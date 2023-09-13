@@ -8,6 +8,7 @@ export const Home = () => {
     const {lightMode} = useContext(ViewModeContext);
     const {language} = useContext(LanguageContext);
 
+
     return (
         <>
         {

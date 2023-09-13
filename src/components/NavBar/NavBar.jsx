@@ -1,13 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import '../../styles/navbar.css'
 import { ViewModeContext } from "../../context/viewModeContext";
-import { LanguageContext } from "../../context/LanguageContext"
+import { LanguageContext } from "../../context/LanguageContext";
 import { MdDarkMode, MdLightMode } from "react-icons/md"; 
 
-export const Navbar = () => {
+export const Navbar = (props) => {
     const { lightMode, setLightMode} = useContext(ViewModeContext);
     const { language, setLanguage } = useContext(LanguageContext);
- 
+
+
+    if(props.lang == 'es'){
+        setLanguage(true);
+    } else {
+        setLanguage(false);
+    }
+
     function darkModeHandler(){
         setLightMode(false);
         const body = document.getElementById('appBody');
@@ -26,17 +33,12 @@ export const Navbar = () => {
         const body = document.getElementById('appBody');
         const nav = document.getElementById('navBar');
         const links = document.querySelectorAll('.NavbarLi');
-        const viewBtn = document.getElementById('viewBtn');
         body.style.backgroundColor = 'rgba(255, 255, 255, 0.87)';
         body.style.color = '#242424';
         nav.style.backgroundColor = 'rgba(255, 255, 255, 1)';
         links.forEach(link => {
             link.style.color = '#242424'
         });
-    }
-
-    function changeLanguage() {
-        language ? setLanguage(false) : setLanguage(true)
     }
 
     return language ? (
@@ -50,7 +52,7 @@ export const Navbar = () => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn" id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn" onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {language ? <button className="view-btn" onClick={changeLanguage}>EN</button> : <button className="view-btn"  onClick={changeLanguage}>ES</button>}
+                {  language ?   <a href="/es"><button className="view-btn">ES</button></a> : <a href="/"><button className="view-btn">EN</button></a>}
                 </div>
             </div>
         </>
@@ -65,7 +67,7 @@ export const Navbar = () => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn"  id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn"  onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {language ? <button className="view-btn"  onClick={changeLanguage}>EN</button> : <button className="view-btn"  onClick={changeLanguage}>ES</button>}
+                {  language ?   <a href="/es"><button className="view-btn">ES</button></a> : <a href="/"><button className="view-btn">EN</button></a>}
                 </div>
             </div>
         </>

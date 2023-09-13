@@ -24,7 +24,7 @@ export const Contact = () => {
                         <a href="https://www.linkedin.com/in/nicolas-cam-pos/" className="contact-link" target="_blank">
                             <ImLinkedin size={50} className="contact-icon" style={{color: '#242424'}} /> 
                         </a>
-                        <p className="contact-txt-A"> Nicolás Campos </p>
+                        <p className="contact-txt-B"> Nicolás Campos </p>
                     </div> 
                     <div className="contact-link">
                         <a href="#" className="contact-link" target="_blank">
