@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title":"Weather App",
-        "image": "https://i.ibb.co/5kTtfn5/Weather-App.png",
+        "image": "https://i.ibb.co/3TsDnPt/Weather-App.png",
         "link": "https://github.com/TaiBiscuit/The-Weather-App",
         "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
         "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
@@ -18,19 +18,27 @@
     },
     {
         "id": 3,
-        "title":"Snake Game",
-        "image": "https://i.ibb.co/kBhrVZC/Snake.png",
-        "link": "https://taibiscuit.github.io/Snake-Js-Game/",
-        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "title":"Chat App",
+        "image": "https://i.ibb.co/VNW9V5W/ChatApp.png",
+        "link": "https://github.com/TaiBiscuit/Chat-App",
+        "tech1": "https://i.ibb.co/1vQZ3sB/reactjs.png",
         "key": 52
     },
     {
         "id": 4,
+        "title":"Snake Game",
+        "image": "https://i.ibb.co/kBhrVZC/Snake.png",
+        "link": "https://taibiscuit.github.io/Snake-Js-Game/",
+        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "key": 53
+    },
+    {
+        "id": 5,
         "title":"Piano",
         "image": "https://i.ibb.co/Z2PNJTg/piano.png",
         "link": "https://taibiscuit.github.io/Piano-Js/",
         "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
         "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
-        "key": 53
+        "key": 54
     }
 ]

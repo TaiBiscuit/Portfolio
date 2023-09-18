@@ -85,3 +85,104 @@ button:focus-visible {
 #appBody{
   transition: all 0.15s;
 }
+
+@media only screen and (max-width:412px){
+
+  .section{
+    min-height: 70vh;
+  }
+  
+  #nav-activate-btn{
+    display: block;
+  }
+
+  .NavbarUl{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links{
+    display: none;
+  }
+
+  .NavbarLi{
+    font-size: 51px;
+  }
+
+  .btns{
+    margin-left: 0.3rem;
+    margin-top: 1rem;
+  }
+
+  .switch{
+    margin-bottom: 1rem;
+  }
+
+  .header-h1{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-me-zone{
+    display: block;
+    padding: 0 5rem 1rem 4.5rem;
+
+  }
+
+  .about-me-picture{
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
+  .about-me-img{
+    width: 275px;
+  }
+
+  .tech-icons-zone{
+    display: block;
+  }
+
+  .tech-info{
+    display: block;
+    margin-bottom: 5rem;
+  }
+
+  .tech-info-choosen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-project{
+    padding: 0 2rem 0 3rem;
+  }
+  .projects{
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .container{
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-template-areas:
+    "project-zone-1 project-zone-2" 
+    "project-zone-3 project-zone-4" 
+    "project-zone-5 project-zone-6"
+    "project-zone-7 project-zone-8";
+  }
+
+  .project-A , .project-B{
+    height: 136px;
+    width: 153px;
+  }
+
+  .contact-icons{
+    justify-content: space-around;
+  }
+
+  .contact-txt-B, .contact-txt-A{
+    font-size: 10px;
+  }
+}

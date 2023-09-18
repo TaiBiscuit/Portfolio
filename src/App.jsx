@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import { MainRoutes } from './routes/MainRoutes';
 import { ViewModeProvider } from './context/viewModeContext';
 import { LanguageProvider } from './context/LanguageContext';

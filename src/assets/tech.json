@@ -28,24 +28,31 @@
         "key": 103
     },
     {
+        "name": "Tailwind",
+        "info": "Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.",
+        "image": "https://svgur.com/i/xdW.svg",
+        "id": 5,
+        "key": 104
+    },
+    {
         "name": "NodeJs",
         "info": "Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.",
         "image": "https://i.ibb.co/6gxqcNV/nodejs.png",
-        "id": 5,
-        "key": 104
+        "id": 6,
+        "key": 105
     },
     {
         "name": "MongoDB",
         "info": "MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.",
         "image": "https://i.ibb.co/hWNST0k/mongodb.png",
-        "id": 6,
-        "key": 105
+        "id": 7,
+        "key": 106
     },
     {
         "name": "Python",
         "info": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
         "image": "https://i.ibb.co/68QccKn/python.png",
-        "id": 7,
-        "key": 106
+        "id": 8,
+        "key": 107
     }
 ]

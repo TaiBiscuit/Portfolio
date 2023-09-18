@@ -3,6 +3,7 @@ import '../../styles/navbar.css'
 import { ViewModeContext } from "../../context/viewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { MdDarkMode, MdLightMode } from "react-icons/md"; 
+import { PiNavigationArrowFill } from 'react-icons/pi';
 
 export const Navbar = (props) => {
     const { lightMode, setLightMode} = useContext(ViewModeContext);
@@ -22,7 +23,7 @@ export const Navbar = (props) => {
         const links = document.querySelectorAll('.NavbarLi');
         body.style.backgroundColor = '#242424';
         body.style.color = 'rgba(255, 255, 255, 0.87)';
-        nav.style.backgroundColor = '#242424';
+        nav.style.backgroundColor = '#333';
         links.forEach(link => {
             link.style.color = 'rgba(255, 255, 255, 0.87)';
         });  
@@ -39,12 +40,25 @@ export const Navbar = (props) => {
         links.forEach(link => {
             link.style.color = '#242424'
         });
+    };
+
+    function phoneViewHandler(){
+        const links = document.getElementById('links');
+        if( links.classList.contains('hide')){
+            links.classList.remove('hide');
+            links.style.display = 'block';
+        } else {
+            links.classList.add('hide');
+            links.style.display = 'none';
+        }
+
     }
 
     return language ? (
         <>
             <div className="NavbarUl" id="navBar">
-                <div className="links">
+                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
+                <div className="links" id="links">
                 <a href="#home" className="NavbarLi">Home</a>
                 <a href="#about-zone" className="NavbarLi">About</a>
                 <a href="#projects-header" className="NavbarLi">Projects</a>

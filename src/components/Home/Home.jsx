@@ -15,7 +15,7 @@ export const Home = () => {
         lightMode ?
         <div className="home section" id="home">
             <div className="hero-img-A">
-            <a href="#about-zone"><img src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/></a>
+            <a href="#projects-header"><img src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/></a>
             </div>
             {language ? 
             <>
@@ -27,14 +27,14 @@ export const Home = () => {
                 <p className="ultra-title">Un <span className="title-span-B">Desarrollador Web</span></p>
             </>
             }
-            <a className="link" href="#projects-header">
+            <a className="link" href="#about-zone">
                 <BiSolidChevronDown size={70} className="icon-B" style={{color: '#242424'}}/>
             </a>
         </div>
         :
         <div className="home section" id="home">
             <div className="hero-img-B">
-                <a href="#about-zone"><img src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/></a>
+                <a href="#projects-header"><img src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/></a>
             </div>
             {language ? 
             <>
@@ -46,7 +46,7 @@ export const Home = () => {
                 <p className="ultra-title">Un <span className="title-span-A">Desarrollador Web</span></p>
             </>
             }
-            <a className="link" href="#projects-header">
+            <a className="link" href="#about-zone">
                 <BiSolidChevronDown size={70} className="icon-A" style={{color: 'white',}}/>
             </a>
         </div>

@@ -28,24 +28,31 @@
         "key": 103
     },
     {
+        "name": "Tailwind",
+        "info": "Tailwind CSS es un framework de CSS de código abierto​ para el diseño de páginas web. La principal característica de esta biblioteca es que, a diferencia de otras como Bootstrap, no genera una serie de clases predefinidas para elementos como botones o tablas.",
+        "image": "https://svgur.com/i/xdW.svg",
+        "id": 5,
+        "key": 104
+    },
+    {
         "name": "NodeJs",
         "info": "Node.js es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor basado en el lenguaje de programación JavaScript, asíncrono, con E/S de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.",
         "image": "https://i.ibb.co/6gxqcNV/nodejs.png",
-        "id": 5,
-        "key": 104
+        "id": 6,
+        "key": 105
     },
     {
         "name": "MongoDB",
         "info": "MongoDB es un sistema de base de datos NoSQL, orientado a documentos y de código abierto. En lugar de guardar los datos en tablas, tal y como se hace en las bases de datos relacionales, MongoDB guarda estructuras de datos BSON (una especificación similar a JSON) con un esquema dinámico, haciendo que la integración de los datos en ciertas aplicaciones sea más fácil y rápida.",
         "image": "https://i.ibb.co/hWNST0k/mongodb.png",
-        "id": 6,
-        "key": 105
+        "id": 7,
+        "key": 106
     },
     {
         "name": "Python",
         "info": "Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, por ejemplo: Instagram, Netflix, Spotify, Panda3D, entre otros.​",
         "image": "https://i.ibb.co/68QccKn/python.png",
         "id": 7,
-        "key": 106
+        "key": 107
     }
 ]
