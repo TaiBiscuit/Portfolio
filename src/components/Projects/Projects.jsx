@@ -33,13 +33,13 @@ export const Projects = () => {
             {
             language? 
             <>
-            <h1 className="header-h1" id="projects-header">My Projects!</h1>
+            <h1 className="header-h1" id="projects-header">Projects</h1>
             <div className="about-project">
                 <p>See some of my projects! You can also see my Github link at the bottom of the page. Feel free to take a look at my repositories. Upon hover you will see the icons representing the used technology for each project. If you click on it, you will see the page on a new window.</p>
             </div>
             </>:
             <>
-            <h1 className="header-h1" id="projects-header">¡Mis Proyectos!</h1>
+            <h1 className="header-h1" id="projects-header">Proyectos</h1>
             <div className="about-project">
                 <p>¡Mira algunos de mis proyectos! También podes visitar mis repositorios de Github, cuyo link se encuentra en la sección de contactos. Al pasar el mouse por cada proyecto se desplegarán los iconos que corresponden a las tecnologías utilizadas. Al hacer click izquierdo se abrirá el proyecto (O su repositorio) en una ventana nueva.</p>
             </div>

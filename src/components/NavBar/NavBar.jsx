@@ -8,7 +8,9 @@ import { PiNavigationArrowFill } from 'react-icons/pi';
 export const Navbar = (props) => {
     const { lightMode, setLightMode} = useContext(ViewModeContext);
     const { language, setLanguage } = useContext(LanguageContext);
-
+    const body = document.getElementById('appBody');
+    const nav = document.getElementById('navBar');
+    const links = document.querySelectorAll('.NavbarLi');
 
     if(props.lang == 'es'){
         setLanguage(true);
@@ -18,9 +20,6 @@ export const Navbar = (props) => {
 
     function darkModeHandler(){
         setLightMode(false);
-        const body = document.getElementById('appBody');
-        const nav = document.getElementById('navBar');
-        const links = document.querySelectorAll('.NavbarLi');
         body.style.backgroundColor = '#242424';
         body.style.color = 'rgba(255, 255, 255, 0.87)';
         nav.style.backgroundColor = '#333';
@@ -73,9 +72,10 @@ export const Navbar = (props) => {
     ) : (
         <>
             <div className="NavbarUl" id="navBar">
-                <div className="links">
+                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
+                <div className="links" id="links">
                 <a href="#home" className="NavbarLi">Inicio</a>
-                <a href="#about-zone" className="NavbarLi">Sobre Mi</a>
+                <a href="#about-zone" className="NavbarLi">Sobre Mí</a>
                 <a href="#projects-header" className="NavbarLi">Proyectos</a>
                 <a href="#contact" className="NavbarLi">Contacto</a>
                 </div>

@@ -1,5 +1,6 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/*   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -106,7 +107,7 @@ button:focus-visible {
   }
 
   .NavbarLi{
-    font-size: 51px;
+    font-size: 40px;
   }
 
   .btns{

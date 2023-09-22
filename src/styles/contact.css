@@ -1,4 +1,8 @@
-
+.contact{
+    background-color: #1a1919;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
 
 .contact-icons{
     display: flex;
@@ -22,6 +26,10 @@
     transition: all 0.3s ease-out;
 }
 
+.contact-txt-B{
+    color: white;
+}
+
 .contact-link:hover .contact-icon{
     transform: translateY(-15px); 
 }
@@ -31,5 +39,5 @@
 }
 
 .contact-link:hover .contact-txt-B{
-    color: #3e1291 ; 
+    color: #7537e7 ; 
 }
