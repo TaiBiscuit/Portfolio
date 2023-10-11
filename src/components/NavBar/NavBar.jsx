@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import '../../styles/navbar.css'
-import { ViewModeContext } from "../../context/viewModeContext";
+import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { MdDarkMode, MdLightMode } from "react-icons/md"; 
 import { PiNavigationArrowFill } from 'react-icons/pi';

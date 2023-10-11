@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import '../../styles/projects.css'
 import { Loader } from "../Loader/Loader";
-import { ViewModeContext } from "../../context/viewModeContext";
+import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 
 export const Projects = () => {

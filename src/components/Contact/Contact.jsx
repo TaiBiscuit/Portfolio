@@ -3,7 +3,7 @@ import '../../styles/contact.css'
 import { BsGithub, BsFillTelephoneFill } from "react-icons/bs"; 
 import { MdMail } from "react-icons/md";
 import { ImLinkedin } from "react-icons/im";
-import { ViewModeContext } from "../../context/viewModeContext";
+import { ViewModeContext } from "../../context/ViewModeContext";
 
 export const Contact = () => {
     const {lightMode} = useContext(ViewModeContext);

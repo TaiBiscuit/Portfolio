@@ -1,6 +1,6 @@
 import './App.css';
 import { MainRoutes } from './routes/MainRoutes';
-import { ViewModeProvider } from './context/viewModeContext';
+import { ViewModeProvider } from './context/ViewModeContext';
 import { LanguageProvider } from './context/LanguageContext';
 
 function App() {

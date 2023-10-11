@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import '../../styles/home.css'
 import { BiSolidChevronDown } from "react-icons/bi";
-import { ViewModeContext } from "../../context/viewModeContext";
+import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 
 export const Home = () => {
