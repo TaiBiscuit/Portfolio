@@ -15,7 +15,7 @@ export const Home = () => {
         lightMode ?
         <div className="home section" id="home">
             <div className="hero-img-A">
-            <a href="#projects-header"><img onload={() => setLoading(false)} src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/ ></a>
+            <a href="#projects-header"><img onload={() => setLoading(false)} src="https://i.ibb.co/r7YXMVJ/Nico.jpg" alt="" className="home-img"/ ></a>
             </div>
             {language ? 
             <>
@@ -34,7 +34,7 @@ export const Home = () => {
         :
         <div className="home section" id="home">
             <div className="hero-img-B">
-                <a href="#projects-header"><img src="https://pbs.twimg.com/profile_images/1515419749089525762/PPLkBBAh_400x400.jpg" alt="" className="home-img"/></a>
+                <a href="#projects-header"><img src="https://i.ibb.co/r7YXMVJ/Nico.jpg" alt="" className="home-img"/></a>
             </div>
 
             {language ? 

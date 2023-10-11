@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .tech-zone{
@@ -69,4 +70,9 @@
 
 .tech:hover{
     transform: scale(2);
+}
+
+.span-sub-title-B{
+    color: red;
+    font-style: italic;
 }

@@ -5,6 +5,8 @@
     align-items: center;
     overflow-x: hidden;
     height: 100vh;
+/*     background-image: url('https://svgur.com/i/y8e.svg');
+    background-size:contain; */
 }
 
 .hero-img-A{
@@ -15,7 +17,6 @@
     padding: 5px;
     overflow: hidden;
     transition: all 1s ease;
-/*     border: solid 3px blue; */
 }
 
 .hero-img-A:before{
@@ -41,7 +42,6 @@
     padding: 5px;
     overflow: hidden;
     transition: all 1s ease;
-/*     border: solid 3px blue; */
 }
 
 .hero-img-B:before{
