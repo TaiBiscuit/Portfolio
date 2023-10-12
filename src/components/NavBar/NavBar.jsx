@@ -4,6 +4,7 @@ import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { MdDarkMode, MdLightMode } from "react-icons/md"; 
 import { PiNavigationArrowFill } from 'react-icons/pi';
+import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = (props) => {
     const { lightMode, setLightMode} = useContext(ViewModeContext);
@@ -11,6 +12,7 @@ export const Navbar = (props) => {
     const body = document.getElementById('appBody');
     const nav = document.getElementById('navBar');
     const links = document.querySelectorAll('.NavbarLi');
+    const navigate = useNavigate();
 
     if(props.lang == 'es'){
         setLanguage(true);
@@ -50,11 +52,20 @@ export const Navbar = (props) => {
             links.classList.add('hide');
             links.style.display = 'none';
         }
+    }
 
+    function handleLanguage(e){
+        const goTo = e.target.outerText
+        if(goTo == 'ES'){
+            navigate('/es')
+        } else{
+            navigate('/')
+        }
     }
 
     return language ? (
         <>
+        <Link/>
             <div className="NavbarUl" id="navBar">
                 <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
                 <div className="links" id="links">
@@ -65,7 +76,7 @@ export const Navbar = (props) => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn" id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn" onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {  language ?   <a href="https://willowy-faun-2f71dc.netlify.app/es"><button className="view-btn">ES</button></a> : <a href="https://willowy-faun-2f71dc.netlify.app/"><button className="view-btn">EN</button></a>}
+                {  language ?  <button className="view-btn" onClick={ (e) => handleLanguage(e)}>ES</button> : <button className="view-btn" onClick={ (e) => handleLanguage(e)}>EN</button>}
                 </div>
             </div>
         </>
@@ -81,7 +92,7 @@ export const Navbar = (props) => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn"  id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn"  onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {  language ?   <a href="https://willowy-faun-2f71dc.netlify.app/es"><button className="view-btn">ES</button></a> : <a href="https://willowy-faun-2f71dc.netlify.app/"><button className="view-btn">EN</button></a>}
+                {  language ?   <button className="view-btn" onClick={ (e) => handleLanguage(e)}>ES</button> : <button className="view-btn" onClick={ (e) => handleLanguage(e)}>EN</button>}
                 </div>
             </div>
         </>
