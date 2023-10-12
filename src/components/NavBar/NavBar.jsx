@@ -65,7 +65,7 @@ export const Navbar = (props) => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn" id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn" onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {  language ?   <a href="/es"><button className="view-btn">ES</button></a> : <a href="/"><button className="view-btn">EN</button></a>}
+                {  language ?   <a href="https://willowy-faun-2f71dc.netlify.app/es"><button className="view-btn">ES</button></a> : <a href="https://willowy-faun-2f71dc.netlify.app/"><button className="view-btn">EN</button></a>}
                 </div>
             </div>
         </>
@@ -81,7 +81,7 @@ export const Navbar = (props) => {
                 </div>
                 <div className="btns">
                 { lightMode ? <div className="switch"><button className="view-btn"  id="viewBtn" onClick={darkModeHandler}><MdDarkMode style={{color:"white"}}/></button></div> : <div className="switch"><button className="view-btn"  onClick={ligthModeHandler}><MdLightMode style={{color: "white"}} /></button></div>}
-                {  language ?   <a href="/es"><button className="view-btn">ES</button></a> : <a href="/"><button className="view-btn">EN</button></a>}
+                {  language ?   <a href="https://willowy-faun-2f71dc.netlify.app/es"><button className="view-btn">ES</button></a> : <a href="https://willowy-faun-2f71dc.netlify.app/"><button className="view-btn">EN</button></a>}
                 </div>
             </div>
         </>
