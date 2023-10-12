@@ -10,7 +10,7 @@ export const About = () => {
     const {language} = useContext(LanguageContext);
 
     const getTechData = () => {
-        fetch('./src/assets/tech.json')
+        fetch('./public/assets/tech.json')
         .then(function(response) {
             return response.json();
         })
@@ -18,7 +18,7 @@ export const About = () => {
             setData(myJson);
             setLoading(false)
         });
-        fetch('./src/assets/techES.json')
+        fetch('./public/assets/techES.json')
         .then(function(response) {
             return response.json();
         })
@@ -76,6 +76,7 @@ export const About = () => {
       },[]);
 
       
+
 
     return loading ? (
     <Loader />

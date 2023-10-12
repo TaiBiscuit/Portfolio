@@ -6,13 +6,13 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 export const Projects = () => {
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
     const {lightMode} = useContext(ViewModeContext);
+    const [loading, setLoading] = useState(true);
     const {language} = useContext(LanguageContext);
 
 
     const getProjectData = () => {
-        fetch('./src/assets/projects.json')
+        fetch('./public/assets/projects.json')
         .then(function(response) {
             return response.json();
         })
@@ -25,9 +25,9 @@ export const Projects = () => {
     useEffect(()=>{
         getProjectData()
       },[]);
-    
-    return loading ? (
-        <Loader />
+      
+      return loading ? (
+      <Loader />
       ) : (
         <>
             {
