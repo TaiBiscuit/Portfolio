@@ -12,7 +12,7 @@ export const Projects = () => {
 
 
     const getProjectData = () => {
-        fetch('./public/assets/projects.json')
+        fetch('./assets/projects.json')
         .then(function(response) {
             return response.json();
         })
