@@ -27,10 +27,13 @@
 
 .view-btn{
     border-radius: 40px;
+    margin-bottom: 1rem;
 }
 
 .btns{
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 2rem;
 }
 

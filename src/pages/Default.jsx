@@ -1,5 +1,5 @@
 import React from 'react';
-import { Contact, Home, Navbar, Projects, About } from '../components';
+import { Contact, Home, Navbar, Projects, About, Extras } from '../components';
 
 export const Default = () => {
     
@@ -9,6 +9,7 @@ export const Default = () => {
       <Home/>
       <About/>
       <Projects/>
+      <Extras/>
       <Contact/>
     </>
     )
