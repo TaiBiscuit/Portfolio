@@ -138,7 +138,8 @@ button:focus-visible {
   }
 
   .hero-img-B, .hero-img-A{
-    max-width: 200px;
+    margin-top: 10rem;
+    max-width: 250px;
   }
   .tech-icons-zone{
     display: block;
