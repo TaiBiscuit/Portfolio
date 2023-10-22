@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import '../../styles/navbar.css'
 import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -14,11 +14,13 @@ export const Navbar = (props) => {
     const links = document.querySelectorAll('.NavbarLi');
     const navigate = useNavigate();
 
-    if(props.lang == 'es'){
-        setLanguage(true);
-    } else {
-        setLanguage(false);
-    }
+    useEffect(()=>{
+        if(props.lang == 'es'){
+            setLanguage(true);
+        } else {
+            setLanguage(false);
+        }
+      },[]);
 
     function darkModeHandler(){
         setLightMode(false);

@@ -21,7 +21,7 @@
         "id": 3,
         "title":"Chat App",
         "image": "https://i.ibb.co/6FFtrkk/ChatApp.png",
-        "link": "https://github.com/TaiBiscuit/Chat-App",
+        "link": "https://nico-chat-app.netlify.app/",
         "tech1": "https://i.ibb.co/p0XsJ8r/reactjs.png",
         "tech2": "https://svgur.com/i/xdW.svg",
         "key": 52
@@ -38,7 +38,7 @@
         "id": 5,
         "title":"Piano",
         "image": "https://i.ibb.co/XY9tvp8/Piano.png",
-        "link": "https://nico-chat-app.netlify.app/",
+        "link": "https://taibiscuit.github.io/Piano-Js/",
         "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
         "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
         "key": 54
