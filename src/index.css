@@ -73,6 +73,19 @@ button:focus-visible {
 }
 
 
+
+@media only screen and (max-width:1300px){
+
+  .section{
+    min-height: 140vh;
+  }
+
+  .about-me-picture{
+    padding-right: 0;
+  }
+
+}
+
 @media only screen and (max-width:1500px){
 
   .section{
