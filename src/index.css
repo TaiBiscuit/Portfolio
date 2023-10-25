@@ -89,11 +89,16 @@ button:focus-visible {
 @media only screen and (max-width:1500px){
 
   .section{
-    min-height: 120vh;
+    min-height: 140vh;
   }
 
   .about-me-picture{
     padding-right: 0;
+  }
+
+  .hero-img-B, .hero-img-A{
+    max-width: 250px;
+    max-height: 250px;
   }
 
 }
