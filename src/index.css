@@ -103,7 +103,7 @@ button:focus-visible {
 
 }
 
-@media only screen and (max-width:412px){
+@media only screen and (max-width:489px){
 
   .section{
     min-height: 70vh;
@@ -155,6 +155,10 @@ button:focus-visible {
     width: 60vw;
   }
 
+  .about-me-img:hover{
+    transform: scale(1);
+  }
+
   .hero-img-B, .hero-img-A{
     margin-top: 10rem;
     max-width: 250px;
@@ -199,15 +203,26 @@ button:focus-visible {
   }
 
   .project-img{
-    height: 98%;
+    height: 59%;
+    width: 100%;
+  }
+
+  .project-img:hover{
+    height: 59%;
+    width: 100%;
+  }
+
+  .contact-link:hover{
+    color: white;
+    transform: translateY(0);
   }
 
   .contact-icons{
-    justify-content: space-around;
+    flex-direction: column;
   }
 
   .contact-txt-B, .contact-txt-A{
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .extras-zone{
@@ -216,5 +231,6 @@ button:focus-visible {
 
   .extra-btn-B, .extra-btn-A{
     width: 150px;
+    margin-bottom: 1rem;
   }
 }

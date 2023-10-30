@@ -53,7 +53,7 @@ export const Projects = () => {
                     {
                     data && data.length>0 && data.map((item) =>{
                         return(
-                        <div className={`project-A project-zone-${item.id}`}>
+                        <div className={`project-A project-zone-${item.id} `} key={item.key}>
                             <a href={item.link} target="_blank"><img src={item.image} alt="Project" className="project-img"/></a>
                             <p className="project-title">{item.title}</p>
                             <ul className="project-tech">

@@ -30,7 +30,7 @@
     {
         "name": "Tailwind",
         "info": "Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.",
-        "image": "https://svgur.com/i/xdW.svg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
         "id": 5,
         "key": 104
     },

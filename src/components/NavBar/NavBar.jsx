@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import '../../styles/navbar.css'
 import { ViewModeContext } from "../../context/ViewModeContext";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -12,6 +12,7 @@ export const Navbar = (props) => {
     const body = document.getElementById('appBody');
     const nav = document.getElementById('navBar');
     const links = document.querySelectorAll('.NavbarLi');
+    const linksNav = document.getElementById('links');
     const navigate = useNavigate();
 
     useEffect(()=>{
@@ -46,13 +47,16 @@ export const Navbar = (props) => {
     };
 
     function phoneViewHandler(){
-        const links = document.getElementById('links');
-        if( links.classList.contains('hide')){
-            links.classList.remove('hide');
-            links.style.display = 'block';
-        } else {
-            links.classList.add('hide');
-            links.style.display = 'none';
+        const linksNav = document.getElementById('links');
+        console.log(linksNav)
+        if(linksNav.classList.contains('hide')){
+            linksNav.classList.remove('hide');
+            linksNav.classList.add('show');
+            linksNav.style.display = 'block';
+        } else if(linksNav.classList.contains('show')){
+            linksNav.classList.add('hide');
+            linksNav.classList.remove('show');
+            linksNav.style.display = 'none';
         }
     }
 
@@ -70,7 +74,7 @@ export const Navbar = (props) => {
         <Link/>
             <div className="NavbarUl" id="navBar">
                 <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
-                <div className="links" id="links">
+                <div className="links show" id="links">
                 <a href="#home" className="NavbarLi">Home</a>
                 <a href="#about-zone" className="NavbarLi">About</a>
                 <a href="#projects-header" className="NavbarLi">Projects</a>
