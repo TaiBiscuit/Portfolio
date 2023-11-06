@@ -9,6 +9,10 @@
     background-size:contain; */
 }
 
+.hero-img-A, .hero-img-B{
+    margin-top:5rem;
+}
+
 .hero-img-A{
     position: relative;
     max-width: 300px;

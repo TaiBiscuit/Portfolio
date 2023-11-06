@@ -46,9 +46,8 @@ export const Navbar = (props) => {
         });
     };
 
-    function phoneViewHandler(){
-        const linksNav = document.getElementById('links');
-        console.log(linksNav)
+     function phoneViewHandler(e){
+        e.preventDefault();
         if(linksNav.classList.contains('hide')){
             linksNav.classList.remove('hide');
             linksNav.classList.add('show');
@@ -73,8 +72,8 @@ export const Navbar = (props) => {
         <>
         <Link/>
             <div className="NavbarUl" id="navBar">
-                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
-                <div className="links show" id="links">
+                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={(e) => phoneViewHandler(e)}><PiNavigationArrowFill/></button>
+                <div className="links" id="links">
                 <a href="#home" className="NavbarLi">Home</a>
                 <a href="#about-zone" className="NavbarLi">About</a>
                 <a href="#projects-header" className="NavbarLi">Projects</a>
