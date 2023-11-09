@@ -9,10 +9,10 @@ import { Link, useNavigate } from "react-router-dom";
 export const Navbar = (props) => {
     const { lightMode, setLightMode} = useContext(ViewModeContext);
     const { language, setLanguage } = useContext(LanguageContext);
+    const [mobileView, setMobileView] = useState(false);
     const body = document.getElementById('appBody');
     const nav = document.getElementById('navBar');
     const links = document.querySelectorAll('.NavbarLi');
-    const linksNav = document.getElementById('links');
     const navigate = useNavigate();
 
     useEffect(()=>{
@@ -22,6 +22,19 @@ export const Navbar = (props) => {
             setLanguage(false);
         }
       },[]);
+    
+      useEffect(()=>{
+        const linksNav = document.getElementById('links');
+        if(mobileView == false){
+            linksNav.classList.add('hide');
+            linksNav.classList.remove('show');
+            linksNav.style.display = 'none';
+        } else {
+            linksNav.classList.remove('hide');
+            linksNav.classList.add('show');
+            linksNav.style.display = 'block';
+        } 
+      },[mobileView]);
 
     function darkModeHandler(){
         setLightMode(false);
@@ -48,14 +61,10 @@ export const Navbar = (props) => {
 
      function phoneViewHandler(e){
         e.preventDefault();
-        if(linksNav.classList.contains('hide')){
-            linksNav.classList.remove('hide');
-            linksNav.classList.add('show');
-            linksNav.style.display = 'block';
-        } else if(linksNav.classList.contains('show')){
-            linksNav.classList.add('hide');
-            linksNav.classList.remove('show');
-            linksNav.style.display = 'none';
+        if(mobileView == false){
+            setMobileView(true);
+        } else {
+            setMobileView(false)
         }
     }
 
@@ -88,7 +97,7 @@ export const Navbar = (props) => {
     ) : (
         <>
             <div className="NavbarUl" id="navBar">
-                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={phoneViewHandler}><PiNavigationArrowFill/></button>
+                <button className="nav-activate-btn hide" id="nav-activate-btn" onClick={(e) => phoneViewHandler(e)}><PiNavigationArrowFill/></button>
                 <div className="links" id="links">
                 <a href="#home" className="NavbarLi">Inicio</a>
                 <a href="#about-zone" className="NavbarLi">Sobre Mí</a>

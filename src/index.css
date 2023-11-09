@@ -99,12 +99,13 @@ button:focus-visible {
   }
 
   .NavbarLi{
-    font-size: 40px;
+    font-size: 30px;
+    margin-left: 2rem;
   }
 
   .btns{
-    margin-left: 0.3rem;
     margin-top: 1rem;
+    margin-right: 0;
   }
 
   .nav-activate-btn{
