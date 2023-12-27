@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useRef  } from "react";
 import '../../styles/about.css'
 import { Loader } from "../Loader/Loader";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -8,6 +8,8 @@ export const About = () => {
     const [altData, setAltData] = useState([]);
     const [loading, setLoading] = useState(true);
     const {language} = useContext(LanguageContext);
+    const ref = useRef(null);
+
 
     const getTechData = () => {
         fetch('./assets/tech.json')
@@ -26,6 +28,8 @@ export const About = () => {
             setAltData(myJson);
         })
     };
+
+    
 
     const checkTech = (id) =>{
         const itemSelected = document.getElementById(`${id}`)
@@ -54,6 +58,7 @@ export const About = () => {
             ${textInfo}
         </div>
         `
+        ref.current?.scrollIntoView({behavior: 'smooth'});
     }
 
     const writeAltTechText = (id) => {
@@ -69,6 +74,7 @@ export const About = () => {
             ${textInfo}
         </div>
         `
+        ref.current?.scrollIntoView({behavior: 'smooth'});
     }
 
     useEffect(()=>{
@@ -99,7 +105,7 @@ export const About = () => {
             <h1 className="header-h1">Technologies that I use</h1>
             <div className="tech-zone" id="tech-zone">
             
-            <div className="tech-icons-zone" id="tech-zone">
+            <div className="tech-icons-zone" id="tech-zone" ref={ref}>
             {
                 data && data.length>0 && data.map((item) =>{
                     return(
@@ -144,7 +150,7 @@ export const About = () => {
                 )
             }
             </div>
-            <div className="tech-info" id="tech-info"></div>
+            <div className="tech-info" id="tech-info" ref={ref}></div>
             </div>
             </>
         }
