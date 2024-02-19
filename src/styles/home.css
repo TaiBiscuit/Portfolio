@@ -198,7 +198,7 @@
 }
 
 .icon-A:hover{
-    transform: translateY(20px); 
+    transform: translateY(10px); 
     color: green;
 }
 
