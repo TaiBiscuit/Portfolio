@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     height: 100vh;
 /*     background-image: url('https://svgur.com/i/y8e.svg');
     background-size:contain; */
@@ -20,6 +19,7 @@
     border-radius: 50%;
     padding: 5px;
     transition: all 1s ease;
+    overflow: hidden;
 }
 
 .hero-img-A:before{
