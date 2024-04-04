@@ -42,5 +42,22 @@
         "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
         "tech2": "https://i.ibb.co/Rv1yvNP/css.png",
         "key": 54
+    },
+    {
+        "id": 6,
+        "title":"Hotel Landing Page",
+        "image": "https://i.ibb.co/br8Vcfm/hotela.png",
+        "link":"https://hotelwebdemo.netlify.app/",
+        "tech1": "https://i.ibb.co/p0XsJ8r/reactjs.png",
+        "key": 55
+    },
+    {
+        "id": 7,
+        "title":"Recorder App",
+        "image": "https://i.ibb.co/f88488d/start.png%20alt=",
+        "link": "https://taibiscuit.github.io/recorder-download-page/",
+        "git": "https://github.com/TaiBiscuit/Electron-Screen-Recorder",
+        "tech1": "https://i.ibb.co/1vQZ3sB/javascript.png",
+        "key": 56
     }
 ]
